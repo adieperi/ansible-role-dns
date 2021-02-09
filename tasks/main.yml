@@ -1,0 +1,8 @@
+---
+- name: Import resolv.conf template
+  template:
+    src: templates/resolv.j2
+    dest: /etc/resolv.conf
+    owner: root
+    group: root
+    mode: 0644

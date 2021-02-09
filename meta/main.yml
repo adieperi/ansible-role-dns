@@ -1,0 +1,23 @@
+---
+galaxy_info:
+  author: Anthony Dieperink
+  description: Ansible role to manage resolv.conf
+  license: MIT
+  min_ansible_version: 2.9
+
+  platforms:
+  - name: Ubuntu
+    versions:
+      - focal
+      - bionic
+  - name: Debian
+    versions:
+      - buster
+      - stretch
+  galaxy_tags:
+    - linux
+    - dns
+    - ansible
+    - ansible-role
+    - nameserver
+    - resolv-conf

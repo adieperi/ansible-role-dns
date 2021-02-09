@@ -1,0 +1,9 @@
+{{ ansibleManaged | comment }}
+
+{% if resolvSearchDomain is defined and resolvSearchDomain|length %}
+search {{ resolvSearchDomain }}
+{% endif %}
+
+{% for server in resolvNameServer %}
+nameserver {{ server }}
+{% endfor %}
